@@ -7,6 +7,22 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <form [formGroup]="formulario">
+  <ion-item>
+    <ion-label stacked >Email</ion-label>
+    <ion-input type="email" formControlName="email" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked >Telefone</ion-label>
+    <ion-input type="text" formControlName="telefone" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked >CEP</ion-label>
+    <ion-input type="text" formControlName="cep" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button expand="full">Salvar</ion-button>
+  </ion-item>
+  
+</form>
 </ion-content>
